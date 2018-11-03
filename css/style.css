@@ -403,12 +403,10 @@ table.domains {
   justify-content: space-between;
   align-items: center;
 }
-
 .package-item:hover {
   border: 1px solid #efd33e;
   border-top: 5px solid #efd33e;
 }
-
 .package-item-top {
   width: 55px;
   height: 55px;
@@ -420,7 +418,6 @@ table.domains {
   justify-content: center;
   color: #efd33e;
 }
-
 .package-item-top:after {
   border-radius: 50%;
   display: block;
@@ -430,7 +427,6 @@ table.domains {
   height: 43px;
   content: '';
 }
-
 .package-icon {
   position: absolute;
   z-index: 2;
@@ -440,16 +436,13 @@ table.domains {
   background-image: linear-gradient(90deg, #fff 50%, transparent 50%),
                     linear-gradient(0deg, #fff 50%, #efd33e 50%);
 }
-
 #circle-2 {
   background-image: linear-gradient(90deg, #fff 50%, #828b8c 50%);
 }
-
 #circle-3 {
   background-image: linear-gradient(180deg, transparent 50%, #d95f44 50%),
                     linear-gradient(90deg, #fff 50%, #d95f44 50%);
 }
-
 #circle-4 {
   background-color: #6cbb9c;
 }
@@ -463,7 +456,6 @@ table.domains {
   color: #2c2c2c;
   margin: 0;
 }
-
 .package-item-bottom h3 {
   text-transform: uppercase;
   font-size: 1rem;
@@ -475,7 +467,6 @@ table.domains {
   padding-top: 20px;
   margin: 0;
 }
-
 .package-item-bottom h2 span {
   text-transform: none;
   font-family: "Lato-Regular";
@@ -483,7 +474,6 @@ table.domains {
   font-size: 0.8rem;
   color: #8d8d8d;
 }
-
 .package-item h2 {
   text-transform: uppercase;
   font-size: 1.75rem;
@@ -530,11 +520,9 @@ table.package-describe tr td:first-child {
 .package-item:nth-child(2) {
   border-color: #828b8c;
 }
-
 .package-item:nth-child(3) {
   border-color: #d95f44;
 }
-
 .package-item:nth-child(4) {
   border-color: #6cbb9c;
 }
@@ -544,12 +532,10 @@ table.package-describe tr td:first-child {
   border-color: #828b8c;
   color: #828b8c;
 }
-
 .package-item:nth-child(3) .package-item-top {
   border-color: #d95f44;
   color: #d95f44;
 }
-
 .package-item:nth-child(4) .package-item-top {
   border-color: #6cbb9c;
   color: #6cbb9c;
@@ -559,11 +545,9 @@ table.package-describe tr td:first-child {
 .package-item:nth-child(2) table.package-describe td {
   color: #828b8c;
 }
-
 .package-item:nth-child(3) table.package-describe td {
   color: #d95f44;
 }
-
 .package-item:nth-child(4) table.package-describe td {
   color: #6cbb9c;
 }
@@ -572,15 +556,93 @@ table.package-describe tr td:first-child {
 .package-item:nth-child(2) .package-item-bottom h3 {
   border-color: #828b8c;
 }
-
 .package-item:nth-child(3) .package-item-bottom h3 {
   border-color: #d95f44;
 }
-
 .package-item:nth-child(4) .package-item-bottom h3 {
   border-color: #6cbb9c;
 }
 
+
+
+.about-us {
+  height: 399px;
+  border-top: 2px dashed #d7d7d7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-us .information {
+  max-width: 419px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-us .information p {
+  font-family: Lato-Thin;
+  font-size: 1.1rem;
+  line-height: 27.5px;
+  word-spacing: 1px;
+}
+
+.about-us .information h2 {
+  color: black;
+  font-family: Lato-Black;
+  font-style: normal;
+  font-size: 2.2rem;
+}
+
+.about-us .designers {
+  width: 100%;
+  max-width: 679px;
+  box-sizing: border-box;
+  height: 184px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-left: 2px dashed #d7d7d7;
+  padding-left: 50px;
+}
+
+.about-us .designers img {
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid #e5e5e5;
+}
+
+.about-us .designers .doe {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us .designers .doe h3 {
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 13px;
+  margin-bottom: 0;
+}
+
+.about-us .designers .doe p {
+  font-family: Lato-Medium;
+  font-size: 0.9rem;
+  margin-top: 4px;
+  margin-bottom: 5px;
+}
+
+.about-us .designers .doe .icons i {
+  margin: 10px;
+}
+
+.about-us .designers .doe .icons i:hover {
+  color: #5288b7;
+}
 
 /* ..................................FONTS................................... */
 
@@ -637,6 +699,20 @@ table.package-describe tr td:first-child {
 @font-face {
   font-family: "Lato-Regular";
   src: url("../fonts/lato/Lato-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Lato-Black";
+  src: url("../fonts/lato/Lato-Black.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Lato-Thin";
+  src: url("../fonts/lato/Lato-Thin.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
