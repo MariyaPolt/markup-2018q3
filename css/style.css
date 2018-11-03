@@ -193,9 +193,13 @@ nav {
 
 
 /* .......................................MAIN.......................................... */
+main {
+  left: 0;
+  right: 0;
+}
 
 .buy-domains {
-  height: 578px;
+  height: 579px;
   display: flex;
   position: relative;
 }
@@ -227,6 +231,10 @@ fieldset {
   border: 1px solid #d9d9d9;
   padding: 0;
   margin: 35px 0 0 0;
+}
+
+fieldset:hover {
+  border: 1px solid #21424a;
 }
 
 input {
@@ -292,7 +300,7 @@ fieldset p {
 
 
 
-table {
+table.domains {
   margin-top: 40px;
   color: #cbcbcb;
   padding: 0;
@@ -301,22 +309,22 @@ table {
   font-size: 0.9rem;
 }
 
-td {
+.domains td {
   width: 217px;
   height: 92px;
   border-right: 1px solid #d9d9d9;
   position: relative;
 }
 
-td:last-child {
+.domains td:last-child {
   border-right: none;
 }
 
-.first-row td {
+.domains .first-row td {
   border-bottom: 1px solid #d9d9d9;
 }
 
-td:after {
+.domains td:after {
   content: '';
 
   right: -1px;
@@ -327,11 +335,11 @@ td:after {
   position: absolute;
 }
 
-.first-row td:after {
+.domains .first-row td:after {
   top: -1px;
 }
 
-td:before {
+.domains td:before {
   content: '';
 
   left: -3px;
@@ -342,9 +350,237 @@ td:before {
   position: absolute;
 }
 
-.first-td:before {
+.domains .first-td:before {
   left: -1px !important;
 }
+
+
+
+
+.packages {
+  height: 764px;
+}
+
+.packages-background-img {
+  background: url("../img/41.jpg") no-repeat;
+  height: 383px;
+  width: 100%;
+  background-size: cover;
+  background-position: 60% 32%;
+}
+
+.packages-background-img-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(13, 13, 13, 0.7);
+}
+
+.packages-background-img-overlay-pattern {
+  width: 100%;
+  height: 100%;
+}
+
+.packages-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.package-item {
+  box-sizing: border-box;
+  background-color: white;
+  height: 565px;
+  width: 255px;
+  margin-top: 100px;
+  border-top: 5px solid #efd33e;
+  box-shadow: 0 3px 10px 5px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  padding: 35px 27.5px;
+  padding-right: 33.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.package-item:hover {
+  border: 1px solid #efd33e;
+  border-top: 5px solid #efd33e;
+}
+
+.package-item-top {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #efd33e;
+}
+
+.package-item-top:after {
+  border-radius: 50%;
+  display: block;
+  background-color: white;
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  content: '';
+}
+
+.package-icon {
+  position: absolute;
+  z-index: 2;
+}
+
+#circle-1 {
+  background-image: linear-gradient(90deg, #fff 50%, transparent 50%),
+                    linear-gradient(0deg, #fff 50%, #efd33e 50%);
+}
+
+#circle-2 {
+  background-image: linear-gradient(90deg, #fff 50%, #828b8c 50%);
+}
+
+#circle-3 {
+  background-image: linear-gradient(180deg, transparent 50%, #d95f44 50%),
+                    linear-gradient(90deg, #fff 50%, #d95f44 50%);
+}
+
+#circle-4 {
+  background-color: #6cbb9c;
+}
+
+
+.package-item h3 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: "Lato";
+  font-weight: bold;
+  color: #2c2c2c;
+  margin: 0;
+}
+
+.package-item-bottom h3 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: "Lato";
+  font-weight: bold;
+  color: #2c2c2c;
+  border-top: 3px solid #efd33e;
+  padding: 0;
+  padding-top: 20px;
+  margin: 0;
+}
+
+.package-item-bottom h2 span {
+  text-transform: none;
+  font-family: "Lato-Regular";
+  font-weight: none;
+  font-size: 0.8rem;
+  color: #8d8d8d;
+}
+
+.package-item h2 {
+  text-transform: uppercase;
+  font-size: 1.75rem;
+  font-family: "Lato";
+  font-weight: bold;
+  color: #2c2c2c;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 30px;;
+}
+
+
+table.package-describe {
+  width: 100%;
+  height: 284px;
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+}
+
+table.package-describe td {
+  height: 35px;
+  text-align: right;
+  color: #efd33e;
+  font-family: "Lato-Semibold";
+  font-size: 1rem;
+  padding: 0;
+}
+
+table.package-describe tr td:first-child {
+  text-align: left;
+  font-family: "Lato";
+  font-weight: lighter;
+  color: #bdbdbd;
+}
+
+.package-item table.package-describe tr td:first-child {
+  text-align: left;
+  font-family: "Lato";
+  font-weight: lighter;
+  color: #bdbdbd;
+}
+
+
+.package-item:nth-child(2) {
+  border-color: #828b8c;
+}
+
+.package-item:nth-child(3) {
+  border-color: #d95f44;
+}
+
+.package-item:nth-child(4) {
+  border-color: #6cbb9c;
+}
+
+
+.package-item:nth-child(2) .package-item-top {
+  border-color: #828b8c;
+  color: #828b8c;
+}
+
+.package-item:nth-child(3) .package-item-top {
+  border-color: #d95f44;
+  color: #d95f44;
+}
+
+.package-item:nth-child(4) .package-item-top {
+  border-color: #6cbb9c;
+  color: #6cbb9c;
+}
+
+
+.package-item:nth-child(2) table.package-describe td {
+  color: #828b8c;
+}
+
+.package-item:nth-child(3) table.package-describe td {
+  color: #d95f44;
+}
+
+.package-item:nth-child(4) table.package-describe td {
+  color: #6cbb9c;
+}
+
+
+.package-item:nth-child(2) .package-item-bottom h3 {
+  border-color: #828b8c;
+}
+
+.package-item:nth-child(3) .package-item-bottom h3 {
+  border-color: #d95f44;
+}
+
+.package-item:nth-child(4) .package-item-bottom h3 {
+  border-color: #6cbb9c;
+}
+
 
 /* ..................................FONTS................................... */
 
@@ -368,6 +604,13 @@ td:before {
   src: url("../fonts/lato/Lato-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: bold;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/lato/Lato-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: lighter;
 }
 
 @font-face {
