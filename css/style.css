@@ -27,15 +27,13 @@ h2 {
   font-weight: lighter;
 }
 
-header {
-  left: 0;
-  right: 0;
+a {
+  text-decoration: none;
 }
 
 .wrapper {
   max-width: 1197px;
   margin: 0 auto;
-  padding: 0;
   height: 100%;
 }
 
@@ -55,6 +53,7 @@ nav {
 .logo {
   display: flex;
   height: 30px;
+  width: 133px;
   margin-left: 3px;
 }
 
@@ -93,7 +92,7 @@ nav {
   font-family: Lato-Medium, sans-serif;
 }
 
-.menu_link:hover {
+header .menu_link:hover {
   border-bottom: white 1px solid;
 }
 
@@ -253,6 +252,7 @@ fieldset p {
   margin: 0;
   padding: 0;
   align-items: center;
+  position: relative;
 }
 
 .block-in-fieldset {
@@ -285,6 +285,25 @@ fieldset p {
   outline: none;
 }
 
+#last-block-in-fieldset {
+  position: absolute;
+  width: 60px;
+  right: 0;
+}
+
+#last-block-in-fieldset .angle-down {
+    pointer-events: none;
+    width: 40px;
+    position: absolute;
+    top: 8px;
+    right: 0;
+    height: 100%;
+}
+
+#last-block-in-fieldset .angle-down i {
+  color: #cbcbcb;
+}
+
 .block-in-fieldset select {
   height: 100%;
   margin: 0;
@@ -292,6 +311,10 @@ fieldset p {
   border: none;
   font-family: "Lato-Regular";
   color: #cbcbcb;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -MS-appearance: none;
 }
 
 .block-in-fieldset select:focus {
@@ -467,13 +490,18 @@ table.domains {
   padding-top: 20px;
   margin: 0;
 }
-.package-item-bottom h2 span {
+.package-item-bottom h2 span.mo {
   text-transform: none;
   font-family: "Lato-Regular";
   font-weight: none;
   font-size: 0.8rem;
   color: #8d8d8d;
 }
+.package-item-bottom h2 span.dollar {
+  vertical-align: top;
+  font-size: 1.1rem;
+}
+
 .package-item h2 {
   text-transform: uppercase;
   font-size: 1.75rem;
@@ -694,7 +722,7 @@ table.package-describe tr td:first-child {
   margin: 0;
 }
 
-.bottom {
+.feedback .bottom {
   width: 157px;
   display: flex;
   align-items: center;
@@ -764,11 +792,7 @@ table.package-describe tr td:first-child {
 }
 
 .servers .item .circle:hover {
-  box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.15);
-}
-
-.servers .item a {
-  text-decoration: none;
+  box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -785,6 +809,111 @@ table.package-describe tr td:first-child {
   font-weight: lighter;
   margin: 0;
 }
+
+
+/* .......................................FOOTER....................................  */
+
+footer {
+  height: 294px;
+  background-color: #2e2e2e;
+}
+
+.footer-wrap {
+  weight: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px #4b4b4b solid;
+  height: 75px;
+}
+
+footer .logo img {
+  filter: contrast(20%);
+}
+
+footer .menu_link {
+  height: 100%;
+  color: #686868;
+  font-size: 0.8rem;
+  font-family: Lato-Medium, sans-serif;
+  text-transform: uppercase;
+}
+
+footer .menu_item {
+  margin-left: 47px;
+}
+
+footer .menu_link:hover {
+  color: white;
+}
+
+footer .bottom {
+  height: 218px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .bottom .block {
+  height: 150px;
+  width: 100%;
+  border-right: 1px #4b4b4b solid;
+  display: flex;
+  padding-top: 17px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+footer .bottom .block:last-child {
+  border-right: none;
+}
+
+footer .bottom .block#first-block-footer {
+  max-width: 377px;
+}
+
+footer .bottom .block#second-block-footer {
+  justify-content: center;
+  width: 100%;
+}
+
+footer .bottom .block#second-block-footer #second-block-footer-wrap {
+  width: 310px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .bottom .block#second-block-footer p:hover{
+  color: white;
+  word-spacing: 2px;
+}
+
+footer .bottom .block#second-block-footer .column-1, footer .bottom .block#second-block-footer .column-2 {
+  width: 120px;
+}
+
+footer .bottom .block#third-block-footer {
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 316px;
+}
+
+footer .bottom .block#third-block-footer a p:hover {
+  color: white;
+}
+
+footer .bottom .block p {
+  max-width: 292px;
+  font-family: Lato;
+  font-weight: lighter;
+  font-size: 0.9rem;
+  line-height: 26px;
+  letter-spacing: 0.2px;
+  margin: 0;
+}
+
 
 /* ..................................FONTS................................... */
 

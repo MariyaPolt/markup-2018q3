@@ -16,7 +16,6 @@
               <div class="logo"><img src="img/GhostHostAnasayfa_03.png" alt="Ghost Host logo"></div>
               <nav>
                 <ul class="menu">
-                  <li class="menu_item">
                     <a href="#" class="menu_link">Home</a>
                   </li>
                   <li class="menu_item">
@@ -77,12 +76,15 @@
                 <li class="block-in-fieldset">
                   <input type="text" name="" placeholder="What do you want?">
                 </li>
-                <li class="block-in-fieldset">
+                <li class="block-in-fieldset" id="last-block-in-fieldset">
                   <select class="select-com" name="select-com">
                     <option value=".com">.com</option>
                     <option value=".net">.net</option>
                     <option value=".org">.org</option>
                   </select>
+                  <div class="angle-down">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </div>
                 </li>
               </ul>
             </fieldset>
@@ -115,7 +117,6 @@
             <div class="packages-background-img-overlay-pattern">
               <div class="wrapper">
                 <div class="packages-wrap">
-
                   <div class="package-item">
                     <div class="package-item-top" id="circle-1">
                       <div class="package-icon">
@@ -154,7 +155,7 @@
                     </table>
 
                     <div class="package-item-bottom">
-                      <h2>$15<span>/Mo</span></h2>
+                      <h2><span class="dollar">$</span>15<span class="mo">/Mo</span></h2>
                       <h3>Select plan</h3>
                     </div>
                   </div>
@@ -196,7 +197,7 @@
                     </table>
 
                     <div class="package-item-bottom">
-                      <h2>$30<span>/Mo</span></h2>
+                      <h2><span class="dollar">$</span>30<span class="mo">/Mo</span></h2>
                       <h3>Select plan</h3>
                     </div>
                   </div>
@@ -238,7 +239,7 @@
                     </table>
 
                     <div class="package-item-bottom">
-                      <h2>$40<span>/Mo</span></h2>
+                      <h2><span class="dollar">$</span>40<span class="mo">/Mo</span></h2>
                       <h3>Select plan</h3>
                     </div>
                   </div>
@@ -280,11 +281,10 @@
                     </table>
 
                     <div class="package-item-bottom">
-                      <h2>$70<span>/Mo</span></h2>
+                      <h2><span class="dollar">$</span>70<span class="mo">/Mo</span></h2>
                       <h3>Select plan</h3>
                     </div>
                   </div>
-
                 </div>
               </div>
             </div>
@@ -406,6 +406,68 @@
         </div>
       </div>
     </main>
+
+    <footer>
+      <div class="wrapper">
+        <div class="footer-wrap">
+          <div class="logo"><img src="img/GhostHostAnasayfa_03.png" alt="Ghost Host logo"></div>
+          <nav>
+            <ul class="menu">
+              <li class="menu_item">
+                <a href="#" class="menu_link">Home</a>
+              </li>
+              <li class="menu_item">
+                <a href="#" class="menu_link">About us</a>
+              </li>
+              <li class="menu_item">
+                <a href="#" class="menu_link">Blog</a>
+              </li>
+              <li class="menu_item">
+                <a href="#" class="menu_link">Policy</a>
+              </li>
+              <li class="menu_item">
+                <a href="#" class="menu_link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="bottom">
+          <div class="block" id="first-block-footer">
+            <p>Lorem ipsum dolor sit amet, consecteteeseurı
+            adipiscing elit. Donec mollis commodoeesene
+            que, non commodo risus volutpat vel.<br><br>
+            Design by <strong>Mert Can Eyriyer</strong>.</p>
+          </div>
+          <div class="block" id="second-block-footer">
+            <div id="second-block-footer-wrap">
+              <div class="column-1">
+                <p><i class="fa fa-angle-right" aria-hidden="true"></i> Support</p>
+                <p><i class="fa fa-angle-right" aria-hidden="true"></i> Account</p>
+                <p><i class="fa fa-angle-right" aria-hidden="true"></i> Product Catalog</p>
+                <p><i class="fa fa-angle-right" aria-hidden="true"></i> Shortcodes</p>
+              </div>
+              <div class="column-2">
+                <p><i class="fa fa-angle-right" aria-hidden="true"></i> Site Map</p>
+                <p><i class="fa fa-angle-right" aria-hidden="true"></i> Whois Search</p>
+                <p><i class="fa fa-angle-right" aria-hidden="true"></i> Web Mail</p>
+                <p><i class="fa fa-angle-right" aria-hidden="true"></i> Find Domain</p>
+              </div>
+            </div>
+          </div>
+          <div class="block" id="third-block-footer">
+            <div class="inside-third-block-footer">
+              <a href="tel:000000000000"><p><i class="fa fa-phone" aria-hidden="true"></i> 0000-0000-0000</p></a>
+
+              <a href="mailto:informationteam@ghosthost.com"><p><i class="fa fa-envelope" aria-hidden="true"></i> informationteam@ghosthost.com</p></a>
+
+              <p>Lorem Ipsum Street, Lorem Avenue,<br>
+              Lorem Ipsum</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
   </body>
 </html>
