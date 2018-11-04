@@ -351,8 +351,8 @@ table.domains {
   top: -3px;
   right: -1px;
 
-  width: 7px;
-  height: 7px;
+  width: 14px;
+  height: 14px;
 
   background: #fff;
 }
@@ -366,8 +366,8 @@ table.domains {
   left: -3px;
   bottom: -1px;
 
-  width: 7px;
-  height: 7px;
+  width: 14px;
+  height: 14px;
 
   background: #fff;
 }
@@ -396,6 +396,8 @@ table.domains {
 .packages-background-img-overlay-pattern {
   width: 100%;
   height: 100%;
+
+  background: repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) 0.15%, rgba(0, 0, 0, 0) 0.15%, rgba(0, 0, 0, 0) 0.4%);
 }
 .packages-wrap {
   width: 100%;
@@ -695,12 +697,12 @@ table.package-describe tr td:first-child {
 
   background: rgba(13, 13, 13, 0.75);
 }
-
 .feedback-background-img-overlay-pattern {
   height: 100%;
   width: 100%;
-}
 
+  background: repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) 0.2%, rgba(0, 0, 0, 0) 0.2%, rgba(0, 0, 0, 0) 0.6%);
+}
 .feedback-wrap {
   height: 100%;
   width: 100%;
